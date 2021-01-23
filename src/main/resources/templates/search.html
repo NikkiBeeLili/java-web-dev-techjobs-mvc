@@ -37,15 +37,7 @@
     <hr />
 
     <!-- TODO #4 - Loop over the search results to display all job fields. -->
-    //It says in directions we aren't going to modify fragments.
-    //But now it's saying this step to modify fragments.
-    //Not sure what kind of a fragment they want from me.
-    <div th:replace="fragments :: page-header"></div> //th:if like in Spa day form?
 
-    <div class="container body-content">
-        <h1 th:text="${#strings.capitalizeWords(title)}"></h1>
-        <h2 class = "centered">Search Results</h2>
-    </div>
     <table th:each= "job : ${jobs}" class = "job-listing">
         <tr>
             <th>ID</th>
